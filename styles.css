@@ -207,3 +207,33 @@ ul li.item-menu a .icone > i{
 .box-info i {
     font-size: 28px;
 }
+
+.feed{
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+
+}
+
+.feed-lista{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.feed-text span{
+    color: #000000;
+}
+
+.feed-text i{
+    color: #0b00a8;
+}
+
+.feed-tempo{
+    color: #000000;
+}
