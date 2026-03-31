@@ -1,16 +1,16 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
  
 :root{
-    --bg: #0a0a0a;
-    --surface: #111111;
+    --bg: #ffffff;
+    --surface: #000000;
     --surface2: #1a1a1a;
     --surface3: #222222;
-    --border: rgba(255,255,255,0.08);
+    --border: rgb(6, 10, 51);
     --border2: rgba(255,255,255,0.14);
     --text: #f0ede8;
     --text2: #8a8580;
     --text3: #555250;
-    --accent: #c8f060;
+    --accent: #0b00a8;
     --accent2: #a8d040;
     --accent-dim: rgba(200,240,96,0.08);
     --accent-dim2: rgba(200,240,96,0.15);
@@ -85,14 +85,65 @@ body{
     transition: all 0.15s;
 }
 .nav-btn:hover{ color: var(--text); background: var(--surface2); }
+
 .nav-btn.active{ color: var(--accent); background: var(--accent-dim); }
-.plan-badge{
-    font-size: 11px;
-    font-weight: 500;
-    padding: 3px 10px;
-    border-radius: 20px;
-    background: var(--accent-dim2);
-    color: var(--accent);
-    border: 1px solid rgba(200,240,96,0.25);
-    font-family: var(--font-mono);
+
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0px 10px 1%;
+    box-shadow: 3px 0 0 #0b00a8;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    transition: .6s;
+}
+ 
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.btn-expandir > i{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{
+    background: #0b00a8;
+}
+
+ul li.item-menu{
+    transition: .3s;
+}
+
+ul li.ativo{
+    background: #0b00a8;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .icone > i{
+    font-size: 30px;
+    margin-left: 3px;
 }
