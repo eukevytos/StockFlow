@@ -237,3 +237,14 @@ ul li.item-menu a .icone > i{
 .feed-tempo{
     color: #000000;
 }
+
+.grafico{
+    display: flex;
+    justify-content: end;
+    border-radius: 20px;
+    width: 42%;
+    margin-top: 20px;
+    margin-left: 700px;
+    position: fixed;
+    background-color: white;
+}
